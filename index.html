@@ -3,130 +3,217 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Transform Your Body with Nutrisystem!</title>
+<title>Lose Weight Fast | Proven Transformation System</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-body { margin:0; font-family:Arial,sans-serif; color:#333; overflow-x:hidden; }
-#date { text-align:center; padding:10px; background-color:#ffebcc; font-weight:bold; font-size:1.1em; }
-header { position:relative; color:white; text-align:center; padding:120px 20px 60px; overflow:hidden; }
-header h1 { font-size:3em; margin:0 0 20px; z-index:2; position:relative; }
-header p { font-size:1.2em; margin-bottom:20px; z-index:2; position:relative; }
-.cta-button { background-color:#ff4c4c; color:white; padding:15px 30px; font-size:1.2em; text-decoration:none; border-radius:5px; transition:0.3s; z-index:2; position:relative; }
-.cta-button:hover { background-color:#e03e3e; }
-.timer { font-size:1.3em; font-weight:bold; margin-top:10px; z-index:2; position:relative; }
-.wave { position:absolute; bottom:0; left:0; width:200%; height:100px; background:url('images/wave.png') repeat-x; animation:wave 10s linear infinite; opacity:0.5; }
-@keyframes wave { 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
-section { padding:60px 20px; max-width:1200px; margin:0 auto; opacity:0; transform:translateY(30px); transition:all 1s ease; }
-.features { display:flex; flex-wrap:wrap; gap:40px; justify-content:center; }
-.feature { flex:1 1 300px; text-align:center; }
-.feature img { width:100%; max-width:300px; border-radius:10px; box-shadow:0 5px 20px rgba(0,0,0,0.2); margin-bottom:20px; opacity:0; transform:translateY(20px); transition:all 1s ease; }
-.feature h3 { font-size:1.5em; margin-bottom:10px; }
-.feature p { font-size:1em; color:#555; }
-footer { text-align:center; padding:40px 20px; background-color:#333; color:white; }
-footer a { color:#ffb347; text-decoration:none; font-weight:bold; }
-#beachAudio { position:fixed; bottom:20px; left:20px; z-index:1000; }
-.ba-slider { position:relative; max-width:600px; margin:40px auto; overflow:hidden; border-radius:10px; box-shadow:0 5px 20px rgba(0,0,0,0.2);}
-.ba-slider img { display:block; width:100%; }
-.ba-slider .resize { position:absolute; top:0; left:0; width:50%; overflow:hidden; height:100%; }
-.ba-slider input[type=range] { position:absolute; width:100%; top:50%; transform:translateY(-50%); z-index:2; -webkit-appearance:none; background:none; }
-.ba-slider input[type=range]::-webkit-slider-thumb { -webkit-appearance:none; width:2px; height:100%; background:#ff4c4c; cursor:ew-resize; }
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fc;
+  color: #222;
+}
+
+.top-bar {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+header {
+  background: linear-gradient(135deg,#ff3c3c,#ff8a65);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: white;
+  color: #ff3c3c;
+  padding: 16px 42px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #222;
+  color: #fff;
+}
+
+.section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature {
+  flex: 1 1 30%;
+  margin: 15px;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  margin: 15px;
+}
+
+.gallery img {
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.cta-section {
+  background: #ff3c3c;
+  color: white;
+  padding: 70px 20px;
+}
+
+.countdown {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+@media(max-width:768px){
+  header h1 { font-size: 32px; }
+  .features { flex-direction: column; }
+}
 </style>
 </head>
 <body>
 
-<div id="date"></div>
+<div class="top-bar">
+⚡ Limited Time Offer – Special Discount Available Today
+</div>
 
 <header>
-  <div class="wave"></div>
-  <h1>Transform Your Body with Nutrisystem!</h1>
-  <p>Lose weight, feel confident, and enjoy delicious meals. See amazing results like these!</p>
-  <a class="cta-button" href="http://convert.ctypy.com/aff_c?offer_id=29197&aff_id=21885" target="_blank">Start Your Transformation Now</a>
-  <div class="timer" id="countdown"></div>
+  <h1>Drop 10–25+ Pounds Without Starving Yourself</h1>
+  <p>Thousands are transforming their bodies with this simple, proven system.</p>
+  <a href="http://convert.ctypy.com/aff_c?offer_id=29197&aff_id=21885" target="_blank" class="btn">
+    Start My Transformation
+  </a>
 </header>
 
-<section>
-  <h2 style="text-align:center; margin-bottom:40px;">Real Results, Real Confidence</h2>
+<section class="section">
+  <h2>Why This Works</h2>
   <div class="features">
     <div class="feature">
-      <img src="images/before.jpg" alt="Before Nutrisystem">
-      <h3>Look Amazing in Your Bikini</h3>
-      <p>Feel confident and enjoy your summer body with Nutrisystem’s easy-to-follow meal plans.</p>
+      <h3>🔥 Rapid Fat Loss</h3>
+      <p>Scientifically designed meal plans that jumpstart fat burning.</p>
     </div>
     <div class="feature">
-      <img src="images/happy-woman.jpg" alt="Happy woman after Nutrisystem">
-      <h3>Delicious, Healthy Meals</h3>
-      <p>Nutrisystem makes weight loss simple with meals that taste amazing and keep you satisfied.</p>
+      <h3>🥗 No Meal Prep Stress</h3>
+      <p>Pre-portioned meals delivered right to your door.</p>
     </div>
     <div class="feature">
-      <img src="images/beach-confidence.jpg" alt="Confident woman on beach">
-      <h3>Confidence Boost</h3>
-      <p>Experience the confidence of a healthier lifestyle and a body you love showing off!</p>
+      <h3>💪 Sustainable Results</h3>
+      <p>Build healthy habits and keep the weight off long-term.</p>
     </div>
   </div>
 </section>
 
-<section>
-  <h2 style="text-align:center; margin-bottom:20px;">Before & After Transformations</h2>
-  <div class="ba-slider">
-    <img src="images/after.jpg" alt="After image">
-    <div class="resize">
-      <img src="images/before.jpg" alt="Before image">
+<section class="section">
+  <h2>Real Before & After Transformations</h2>
+  <div class="gallery">
+
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/280x380?text=BEFORE" alt="Before weight loss">
+      <p><strong>Before</strong></p>
     </div>
-    <input type="range" min="0" max="100" value="50">
+
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/280x380?text=AFTER" alt="After weight loss">
+      <p><strong>After - 32 lbs lost</strong></p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/280x380?text=BEFORE" alt="Before weight loss">
+      <p><strong>Before</strong></p>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://via.placeholder.com/280x380?text=AFTER" alt="After weight loss">
+      <p><strong>After - 27 lbs lost</strong></p>
+    </div>
+
   </div>
 </section>
 
-<section style="background-color:#fff5e6;">
-  <h2 style="text-align:center; margin-bottom:30px;">Get Started Today!</h2>
-  <p style="text-align:center; max-width:700px; margin:0 auto 40px;">Thousands of people have transformed their lives with Nutrisystem. Join them now and see the results for yourself.</p>
-  <div style="text-align:center;">
-    <a class="cta-button" href="http://convert.ctypy.com/aff_c?offer_id=29197&aff_id=21885" target="_blank">Claim Your Plan & Save Now</a>
-  </div>
+<section class="cta-section">
+  <h2>Ready To See Results?</h2>
+  <a href="http://convert.ctypy.com/aff_c?offer_id=29197&aff_id=21885" target="_blank" class="btn">
+    Join Now & Claim Discount
+  </a>
+  <div class="countdown" id="timer"></div>
 </section>
 
 <footer>
-  <p>© 2026 Nutrisystem Affiliate Promotion. All rights reserved.</p>
-  <p><a href="http://convert.ctypy.com/aff_c?offer_id=29197&aff_id=21885" target="_blank">Start Losing Weight Today</a></p>
+© 2026 Transformation Results. Independent promotional site.
 </footer>
 
-<audio id="beachAudio" autoplay loop>
-  <source src="audio/beach.mp3" type="audio/mpeg">
-</audio>
-<button onclick="toggleSound()" style="position:fixed; bottom:20px; left:200px; z-index:1000; padding:10px 20px;">Mute/Unmute</button>
-
 <script>
-// Date
-document.getElementById('date').textContent = new Date().toLocaleDateString('en-US', { weekday: 'long', year:'numeric', month:'long', day:'numeric' });
+// 24-hour countdown timer
+var countDownDate = new Date().getTime() + (24 * 60 * 60 * 1000);
 
-// Countdown
-let countdownEnd = new Date();
-countdownEnd.setHours(countdownEnd.getHours() + 48);
-function updateCountdown(){
-  let now = new Date();
-  let diff = countdownEnd - now;
-  if(diff <= 0){ document.getElementById('countdown').textContent="Hurry! Offer Ends Soon!"; return; }
-  let hours=Math.floor(diff/1000/60/60);
-  let minutes=Math.floor((diff/1000/60)%60);
-  let seconds=Math.floor((diff/1000)%60);
-  document.getElementById('countdown').textContent=`Offer Ends in: ${hours}h ${minutes}m ${seconds}s`;
-}
-setInterval(updateCountdown,1000);
-updateCountdown();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
 
-// Scroll Animations
-const sections=document.querySelectorAll('section');
-const images=document.querySelectorAll('.feature img');
-window.addEventListener('scroll',()=>{ sections.forEach(sec=>{ const rect=sec.getBoundingClientRect(); if(rect.top<window.innerHeight-100){ sec.style.opacity=1; sec.style.transform='translateY(0)'; }});
-images.forEach(img=>{ const rect=img.getBoundingClientRect(); if(rect.top<window.innerHeight-100){ img.style.opacity=1; img.style.transform='translateY(0)'; }});});
+  var hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+  var minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+  var seconds = Math.floor((distance % (1000*60)) / 1000);
 
-// Beach Sound Toggle
-function toggleSound(){ const audio=document.getElementById('beachAudio'); audio.paused ? audio.play() : audio.pause(); }
+  document.getElementById("timer").innerHTML =
+    hours + "h " + minutes + "m " + seconds + "s ";
 
-// Before & After Slider
-const slider=document.querySelector('.ba-slider input');
-const resize=document.querySelector('.ba-slider .resize');
-slider.addEventListener('input',function(){ resize.style.width=`${this.value}%`; });
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer").innerHTML = "Offer Refreshing...";
+  }
+}, 1000);
 </script>
 
 </body>
 </html>
-
