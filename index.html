@@ -5,164 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Transform Your Body with Nutrisystem!</title>
 <style>
-    body {
-        margin: 0;
-        font-family: 'Arial', sans-serif;
-        background-color: #fefefe;
-        color: #333;
-        overflow-x: hidden;
-    }
-    #date {
-        text-align: center;
-        padding: 10px;
-        background-color: #ffebcc;
-        font-weight: bold;
-        font-size: 1.1em;
-    }
-    header {
-        position: relative;
-        color: white;
-        text-align: center;
-        padding: 120px 20px 60px 20px;
-        overflow: hidden;
-    }
-    header h1 {
-        font-size: 3em;
-        margin: 0 0 20px;
-        z-index: 2;
-        position: relative;
-    }
-    header p {
-        font-size: 1.2em;
-        margin-bottom: 20px;
-        z-index: 2;
-        position: relative;
-    }
-    .cta-button {
-        background-color: #ff4c4c;
-        color: white;
-        padding: 15px 30px;
-        font-size: 1.2em;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background 0.3s ease;
-        z-index: 2;
-        position: relative;
-    }
-    .cta-button:hover {
-        background-color: #e03e3e;
-    }
-    .timer {
-        font-size: 1.3em;
-        font-weight: bold;
-        margin-top: 10px;
-        z-index: 2;
-        position: relative;
-    }
-    .wave {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 200%;
-        height: 100px;
-        background: url('https://i.ibb.co/yh7w1Kv/wave.png') repeat-x;
-        animation: wave 10s linear infinite;
-        opacity: 0.5;
-    }
-    @keyframes wave {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
-    }
-    section {
-        padding: 60px 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 1s ease;
-    }
-    .features {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
-        justify-content: center;
-    }
-    .feature {
-        flex: 1 1 300px;
-        text-align: center;
-    }
-    .feature img {
-        width: 100%;
-        max-width: 300px;
-        border-radius: 10px;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-        margin-bottom: 20px;
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 1s ease;
-    }
-    .feature h3 {
-        font-size: 1.5em;
-        margin-bottom: 10px;
-    }
-    .feature p {
-        font-size: 1em;
-        color: #555;
-    }
-    footer {
-        text-align: center;
-        padding: 40px 20px;
-        background-color: #333;
-        color: white;
-    }
-    footer a {
-        color: #ffb347;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    #beachAudio {
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        z-index: 1000;
-    }
-    /* Before & After slider */
-    .ba-slider {
-        position: relative;
-        max-width: 600px;
-        margin: 40px auto;
-        overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-    }
-    .ba-slider img {
-        display: block;
-        width: 100%;
-    }
-    .ba-slider .resize {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        overflow: hidden;
-        height: 100%;
-    }
-    .ba-slider input[type="range"] {
-        position: absolute;
-        width: 100%;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 2;
-        -webkit-appearance: none;
-        background: none;
-    }
-    .ba-slider input[type="range"]::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        width: 2px;
-        height: 100%;
-        background: #ff4c4c;
-        cursor: ew-resize;
-    }
+body { margin:0; font-family:Arial,sans-serif; color:#333; overflow-x:hidden; }
+#date { text-align:center; padding:10px; background-color:#ffebcc; font-weight:bold; font-size:1.1em; }
+header { position:relative; color:white; text-align:center; padding:120px 20px 60px; overflow:hidden; }
+header h1 { font-size:3em; margin:0 0 20px; z-index:2; position:relative; }
+header p { font-size:1.2em; margin-bottom:20px; z-index:2; position:relative; }
+.cta-button { background-color:#ff4c4c; color:white; padding:15px 30px; font-size:1.2em; text-decoration:none; border-radius:5px; transition:0.3s; z-index:2; position:relative; }
+.cta-button:hover { background-color:#e03e3e; }
+.timer { font-size:1.3em; font-weight:bold; margin-top:10px; z-index:2; position:relative; }
+.wave { position:absolute; bottom:0; left:0; width:200%; height:100px; background:url('images/wave.png') repeat-x; animation:wave 10s linear infinite; opacity:0.5; }
+@keyframes wave { 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
+section { padding:60px 20px; max-width:1200px; margin:0 auto; opacity:0; transform:translateY(30px); transition:all 1s ease; }
+.features { display:flex; flex-wrap:wrap; gap:40px; justify-content:center; }
+.feature { flex:1 1 300px; text-align:center; }
+.feature img { width:100%; max-width:300px; border-radius:10px; box-shadow:0 5px 20px rgba(0,0,0,0.2); margin-bottom:20px; opacity:0; transform:translateY(20px); transition:all 1s ease; }
+.feature h3 { font-size:1.5em; margin-bottom:10px; }
+.feature p { font-size:1em; color:#555; }
+footer { text-align:center; padding:40px 20px; background-color:#333; color:white; }
+footer a { color:#ffb347; text-decoration:none; font-weight:bold; }
+#beachAudio { position:fixed; bottom:20px; left:20px; z-index:1000; }
+.ba-slider { position:relative; max-width:600px; margin:40px auto; overflow:hidden; border-radius:10px; box-shadow:0 5px 20px rgba(0,0,0,0.2);}
+.ba-slider img { display:block; width:100%; }
+.ba-slider .resize { position:absolute; top:0; left:0; width:50%; overflow:hidden; height:100%; }
+.ba-slider input[type=range] { position:absolute; width:100%; top:50%; transform:translateY(-50%); z-index:2; -webkit-appearance:none; background:none; }
+.ba-slider input[type=range]::-webkit-slider-thumb { -webkit-appearance:none; width:2px; height:100%; background:#ff4c4c; cursor:ew-resize; }
 </style>
 </head>
 <body>
@@ -170,121 +36,96 @@
 <div id="date"></div>
 
 <header>
-    <div class="wave"></div>
-    <h1>Transform Your Body with Nutrisystem!</h1>
-    <p>Lose weight, feel confident, and enjoy delicious meals. See amazing results like these!</p>
-    <a class="cta-button" href="http://convert.ctypy.com/aff_c?offer_id=29197&aff_id=21885" target="_blank">Start Your Transformation Now</a>
-    <div class="timer" id="countdown"></div>
+  <div class="wave"></div>
+  <h1>Transform Your Body with Nutrisystem!</h1>
+  <p>Lose weight, feel confident, and enjoy delicious meals. See amazing results like these!</p>
+  <a class="cta-button" href="http://convert.ctypy.com/aff_c?offer_id=29197&aff_id=21885" target="_blank">Start Your Transformation Now</a>
+  <div class="timer" id="countdown"></div>
 </header>
 
 <section>
-    <h2 style="text-align:center; margin-bottom:40px;">Real Results, Real Confidence</h2>
-    <div class="features">
-        <div class="feature">
-            <img src="https://via.placeholder.com/300x400?text=Before+and+After" alt="Fit woman after Nutrisystem">
-            <h3>Look Amazing in Your Bikini</h3>
-            <p>Feel confident and enjoy your summer body with Nutrisystem’s easy-to-follow meal plans.</p>
-        </div>
-        <div class="feature">
-            <img src="https://via.placeholder.com/300x400?text=Happy+Woman" alt="Happy woman after Nutrisystem">
-            <h3>Delicious, Healthy Meals</h3>
-            <p>Nutrisystem makes weight loss simple with meals that taste amazing and keep you satisfied.</p>
-        </div>
-        <div class="feature">
-            <img src="https://via.placeholder.com/300x400?text=Beach+Confidence" alt="Confident woman on beach">
-            <h3>Confidence Boost</h3>
-            <p>Experience the confidence of a healthier lifestyle and a body you love showing off!</p>
-        </div>
+  <h2 style="text-align:center; margin-bottom:40px;">Real Results, Real Confidence</h2>
+  <div class="features">
+    <div class="feature">
+      <img src="images/before.jpg" alt="Before Nutrisystem">
+      <h3>Look Amazing in Your Bikini</h3>
+      <p>Feel confident and enjoy your summer body with Nutrisystem’s easy-to-follow meal plans.</p>
     </div>
+    <div class="feature">
+      <img src="images/happy-woman.jpg" alt="Happy woman after Nutrisystem">
+      <h3>Delicious, Healthy Meals</h3>
+      <p>Nutrisystem makes weight loss simple with meals that taste amazing and keep you satisfied.</p>
+    </div>
+    <div class="feature">
+      <img src="images/beach-confidence.jpg" alt="Confident woman on beach">
+      <h3>Confidence Boost</h3>
+      <p>Experience the confidence of a healthier lifestyle and a body you love showing off!</p>
+    </div>
+  </div>
 </section>
 
 <section>
-    <h2 style="text-align:center; margin-bottom:20px;">Before & After Transformations</h2>
-    <div class="ba-slider">
-        <img src="https://via.placeholder.com/600x400?text=After" alt="After image">
-        <div class="resize">
-            <img src="https://via.placeholder.com/600x400?text=Before" alt="Before image">
-        </div>
-        <input type="range" min="0" max="100" value="50">
+  <h2 style="text-align:center; margin-bottom:20px;">Before & After Transformations</h2>
+  <div class="ba-slider">
+    <img src="images/after.jpg" alt="After image">
+    <div class="resize">
+      <img src="images/before.jpg" alt="Before image">
     </div>
+    <input type="range" min="0" max="100" value="50">
+  </div>
 </section>
 
 <section style="background-color:#fff5e6;">
-    <h2 style="text-align:center; margin-bottom:30px;">Get Started Today!</h2>
-    <p style="text-align:center; max-width:700px; margin:0 auto 40px;">Thousands of people have transformed their lives with Nutrisystem. Join them now and see the results for yourself.</p>
-    <div style="text-align:center;">
-        <a class="cta-button" href="http://convert.ctypy.com/aff_c?offer_id=29197&aff_id=21885" target="_blank">Claim Your Plan & Save Now</a>
-    </div>
+  <h2 style="text-align:center; margin-bottom:30px;">Get Started Today!</h2>
+  <p style="text-align:center; max-width:700px; margin:0 auto 40px;">Thousands of people have transformed their lives with Nutrisystem. Join them now and see the results for yourself.</p>
+  <div style="text-align:center;">
+    <a class="cta-button" href="http://convert.ctypy.com/aff_c?offer_id=29197&aff_id=21885" target="_blank">Claim Your Plan & Save Now</a>
+  </div>
 </section>
 
 <footer>
-    <p>© 2026 Nutrisystem Affiliate Promotion. All rights reserved.</p>
-    <p><a href="http://convert.ctypy.com/aff_c?offer_id=29197&aff_id=21885" target="_blank">Start Losing Weight Today</a></p>
+  <p>© 2026 Nutrisystem Affiliate Promotion. All rights reserved.</p>
+  <p><a href="http://convert.ctypy.com/aff_c?offer_id=29197&aff_id=21885" target="_blank">Start Losing Weight Today</a></p>
 </footer>
 
 <audio id="beachAudio" autoplay loop>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
+  <source src="audio/beach.mp3" type="audio/mpeg">
 </audio>
 <button onclick="toggleSound()" style="position:fixed; bottom:20px; left:200px; z-index:1000; padding:10px 20px;">Mute/Unmute</button>
 
 <script>
-// Show current date
+// Date
 document.getElementById('date').textContent = new Date().toLocaleDateString('en-US', { weekday: 'long', year:'numeric', month:'long', day:'numeric' });
 
-// Countdown Timer - 48 hours
+// Countdown
 let countdownEnd = new Date();
 countdownEnd.setHours(countdownEnd.getHours() + 48);
-
-function updateCountdown() {
-    let now = new Date();
-    let diff = countdownEnd - now;
-    if(diff <= 0){
-        document.getElementById('countdown').textContent = "Hurry! Offer Ends Soon!";
-        return;
-    }
-    let hours = Math.floor(diff / 1000 / 60 / 60);
-    let minutes = Math.floor((diff / 1000 / 60) % 60);
-    let seconds = Math.floor((diff / 1000) % 60);
-    document.getElementById('countdown').textContent = `Offer Ends in: ${hours}h ${minutes}m ${seconds}s`;
+function updateCountdown(){
+  let now = new Date();
+  let diff = countdownEnd - now;
+  if(diff <= 0){ document.getElementById('countdown').textContent="Hurry! Offer Ends Soon!"; return; }
+  let hours=Math.floor(diff/1000/60/60);
+  let minutes=Math.floor((diff/1000/60)%60);
+  let seconds=Math.floor((diff/1000)%60);
+  document.getElementById('countdown').textContent=`Offer Ends in: ${hours}h ${minutes}m ${seconds}s`;
 }
-setInterval(updateCountdown, 1000);
+setInterval(updateCountdown,1000);
 updateCountdown();
 
 // Scroll Animations
-const sections = document.querySelectorAll('section');
-const images = document.querySelectorAll('.feature img');
-window.addEventListener('scroll', () => {
-    sections.forEach(sec => {
-        const rect = sec.getBoundingClientRect();
-        if(rect.top < window.innerHeight - 100){
-            sec.style.opacity = 1;
-            sec.style.transform = 'translateY(0)';
-        }
-    });
-    images.forEach(img => {
-        const rect = img.getBoundingClientRect();
-        if(rect.top < window.innerHeight - 100){
-            img.style.opacity = 1;
-            img.style.transform = 'translateY(0)';
-        }
-    });
-});
+const sections=document.querySelectorAll('section');
+const images=document.querySelectorAll('.feature img');
+window.addEventListener('scroll',()=>{ sections.forEach(sec=>{ const rect=sec.getBoundingClientRect(); if(rect.top<window.innerHeight-100){ sec.style.opacity=1; sec.style.transform='translateY(0)'; }});
+images.forEach(img=>{ const rect=img.getBoundingClientRect(); if(rect.top<window.innerHeight-100){ img.style.opacity=1; img.style.transform='translateY(0)'; }});});
 
 // Beach Sound Toggle
-function toggleSound(){
-    const audio = document.getElementById('beachAudio');
-    audio.paused ? audio.play() : audio.pause();
-}
+function toggleSound(){ const audio=document.getElementById('beachAudio'); audio.paused ? audio.play() : audio.pause(); }
 
 // Before & After Slider
-const slider = document.querySelector('.ba-slider input');
-const resize = document.querySelector('.ba-slider .resize');
-slider.addEventListener('input', function() {
-    resize.style.width = `${this.value}%`;
-});
+const slider=document.querySelector('.ba-slider input');
+const resize=document.querySelector('.ba-slider .resize');
+slider.addEventListener('input',function(){ resize.style.width=`${this.value}%`; });
 </script>
 
 </body>
 </html>
-
